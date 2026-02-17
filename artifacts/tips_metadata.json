@@ -11,10 +11,83 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percent",
+						"type": "uint256"
+					}
+				],
+				"name": "addWaitress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "addtips",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "distributeBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "removeWaitress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewWaitress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percent",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct tips.Waitress[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -59,11 +132,11 @@
 	},
 	"sources": {
 		"tipjar.sol": {
-			"keccak256": "0x127963f1fb42b8af8e3576761fddf6f13d996adfd8e59efd240cbef66b50c745",
+			"keccak256": "0x41afb4ffbcd48fe9b72419cdb538cad4b91c4d71f788eb3fad1f5eb1ab5b736f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0edadd70044303c584cc23d84a87143cece491349bf4301301fa346ce2b7dbdf",
-				"dweb:/ipfs/QmU6NntkxsCZ6usMqzxamLgKvwbCbm5qAmttGDdWg74WEA"
+				"bzz-raw://a35d6717bba2d26d5a7c66bc0d2a442ab96d6215c060c360f59954b843def938",
+				"dweb:/ipfs/QmcRGynczs5NYyBRQoJofyxaKUq6ysjWRdGy1yZjPSXxZL"
 			]
 		}
 	},
